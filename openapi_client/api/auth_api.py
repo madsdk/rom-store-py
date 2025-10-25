@@ -39,7 +39,7 @@ class AuthApi:
 
 
     @validate_call
-    def login_for_access_token_auth_token_post(
+    def get_access_token(
         self,
         login_data: LoginData,
         _request_timeout: Union[
@@ -82,7 +82,7 @@ class AuthApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._login_for_access_token_auth_token_post_serialize(
+        _param = self._get_access_token_serialize(
             login_data=login_data,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -106,7 +106,7 @@ class AuthApi:
 
 
     @validate_call
-    def login_for_access_token_auth_token_post_with_http_info(
+    def get_access_token_with_http_info(
         self,
         login_data: LoginData,
         _request_timeout: Union[
@@ -149,7 +149,7 @@ class AuthApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._login_for_access_token_auth_token_post_serialize(
+        _param = self._get_access_token_serialize(
             login_data=login_data,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -173,7 +173,7 @@ class AuthApi:
 
 
     @validate_call
-    def login_for_access_token_auth_token_post_without_preload_content(
+    def get_access_token_without_preload_content(
         self,
         login_data: LoginData,
         _request_timeout: Union[
@@ -216,7 +216,7 @@ class AuthApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._login_for_access_token_auth_token_post_serialize(
+        _param = self._get_access_token_serialize(
             login_data=login_data,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -235,7 +235,7 @@ class AuthApi:
         return response_data.response
 
 
-    def _login_for_access_token_auth_token_post_serialize(
+    def _get_access_token_serialize(
         self,
         login_data,
         _request_auth,
@@ -312,7 +312,7 @@ class AuthApi:
 
 
     @validate_call
-    def register_user_auth_register_post(
+    def register_user(
         self,
         login_data: LoginData,
         _request_timeout: Union[
@@ -355,7 +355,7 @@ class AuthApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._register_user_auth_register_post_serialize(
+        _param = self._register_user_serialize(
             login_data=login_data,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -379,7 +379,7 @@ class AuthApi:
 
 
     @validate_call
-    def register_user_auth_register_post_with_http_info(
+    def register_user_with_http_info(
         self,
         login_data: LoginData,
         _request_timeout: Union[
@@ -422,7 +422,7 @@ class AuthApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._register_user_auth_register_post_serialize(
+        _param = self._register_user_serialize(
             login_data=login_data,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -446,7 +446,7 @@ class AuthApi:
 
 
     @validate_call
-    def register_user_auth_register_post_without_preload_content(
+    def register_user_without_preload_content(
         self,
         login_data: LoginData,
         _request_timeout: Union[
@@ -489,7 +489,7 @@ class AuthApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._register_user_auth_register_post_serialize(
+        _param = self._register_user_serialize(
             login_data=login_data,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -508,7 +508,7 @@ class AuthApi:
         return response_data.response
 
 
-    def _register_user_auth_register_post_serialize(
+    def _register_user_serialize(
         self,
         login_data,
         _request_auth,

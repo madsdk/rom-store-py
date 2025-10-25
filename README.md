@@ -71,11 +71,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Login For Access Token
-        api_response = api_instance.login_for_access_token_auth_token_post(login_data)
-        print("The response of AuthApi->login_for_access_token_auth_token_post:\n")
+        api_response = api_instance.get_access_token(login_data)
+        print("The response of AuthApi->get_access_token:\n")
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling AuthApi->login_for_access_token_auth_token_post: %s\n" % e)
+        print("Exception when calling AuthApi->get_access_token: %s\n" % e)
 
 ```
 
@@ -85,8 +85,8 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AuthApi* | [**login_for_access_token_auth_token_post**](docs/AuthApi.md#login_for_access_token_auth_token_post) | **POST** /auth/token | Login For Access Token
-*AuthApi* | [**register_user_auth_register_post**](docs/AuthApi.md#register_user_auth_register_post) | **POST** /auth/register | Register User
+*AuthApi* | [**get_access_token**](docs/AuthApi.md#get_access_token) | **POST** /auth/token | Login For Access Token
+*AuthApi* | [**register_user**](docs/AuthApi.md#register_user) | **POST** /auth/register | Register User
 *CollectionApi* | [**get_collection_games_by_platform**](docs/CollectionApi.md#get_collection_games_by_platform) | **GET** /collection/by-platform/{platform_id} | Games By Platform
 *CollectionApi* | [**get_missing_game_file_count_by_platform**](docs/CollectionApi.md#get_missing_game_file_count_by_platform) | **GET** /collection/missing-by-platform-count/{platform_id} | Missing Files By Platform Count
 *CollectionApi* | [**get_missing_game_files_by_platform**](docs/CollectionApi.md#get_missing_game_files_by_platform) | **GET** /collection/missing-by-platform/{platform_id} | Missing Files By Platform

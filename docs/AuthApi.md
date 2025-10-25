@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**login_for_access_token_auth_token_post**](AuthApi.md#login_for_access_token_auth_token_post) | **POST** /auth/token | Login For Access Token
-[**register_user_auth_register_post**](AuthApi.md#register_user_auth_register_post) | **POST** /auth/register | Register User
+[**get_access_token**](AuthApi.md#get_access_token) | **POST** /auth/token | Login For Access Token
+[**register_user**](AuthApi.md#register_user) | **POST** /auth/register | Register User
 
 
-# **login_for_access_token_auth_token_post**
-> Token login_for_access_token_auth_token_post(login_data)
+# **get_access_token**
+> Token get_access_token(login_data)
 
 Login For Access Token
 
@@ -38,11 +38,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Login For Access Token
-        api_response = api_instance.login_for_access_token_auth_token_post(login_data)
-        print("The response of AuthApi->login_for_access_token_auth_token_post:\n")
+        api_response = api_instance.get_access_token(login_data)
+        print("The response of AuthApi->get_access_token:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling AuthApi->login_for_access_token_auth_token_post: %s\n" % e)
+        print("Exception when calling AuthApi->get_access_token: %s\n" % e)
 ```
 
 
@@ -76,8 +76,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **register_user_auth_register_post**
-> Dict[str, object] register_user_auth_register_post(login_data)
+# **register_user**
+> Dict[str, object] register_user(login_data)
 
 Register User
 
@@ -105,11 +105,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Register User
-        api_response = api_instance.register_user_auth_register_post(login_data)
-        print("The response of AuthApi->register_user_auth_register_post:\n")
+        api_response = api_instance.register_user(login_data)
+        print("The response of AuthApi->register_user:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling AuthApi->register_user_auth_register_post: %s\n" % e)
+        print("Exception when calling AuthApi->register_user: %s\n" % e)
 ```
 
 
