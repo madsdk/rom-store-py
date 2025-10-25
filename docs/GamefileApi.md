@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **get_game_files_by_game**
-> GameFileListWithLimitOffset get_game_files_by_game(game_id, offset=offset, limit=limit, full_records=full_records)
+> GameFileListWithLimitOffset get_game_files_by_game(game_id, offset=offset, limit=limit)
 
 Read Game Files By Game
 
@@ -37,11 +37,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     game_id = 56 # int | 
     offset = 0 # int |  (optional) (default to 0)
     limit = 10 # int |  (optional) (default to 10)
-    full_records = True # bool |  (optional) (default to True)
 
     try:
         # Read Game Files By Game
-        api_response = api_instance.get_game_files_by_game(game_id, offset=offset, limit=limit, full_records=full_records)
+        api_response = api_instance.get_game_files_by_game(game_id, offset=offset, limit=limit)
         print("The response of GamefileApi->get_game_files_by_game:\n")
         pprint(api_response)
     except Exception as e:
@@ -58,7 +57,6 @@ Name | Type | Description  | Notes
  **game_id** | **int**|  | 
  **offset** | **int**|  | [optional] [default to 0]
  **limit** | **int**|  | [optional] [default to 10]
- **full_records** | **bool**|  | [optional] [default to True]
 
 ### Return type
 
@@ -83,7 +81,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_game_files_by_platform**
-> GameFileListWithLimitOffset get_game_files_by_platform(platform_id, offset=offset, limit=limit, full_records=full_records)
+> GameFileListWithLimitOffset get_game_files_by_platform(platform_id, offset=offset, limit=limit)
 
 Read Game Files By Platform
 
@@ -110,11 +108,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     platform_id = 56 # int | 
     offset = 0 # int |  (optional) (default to 0)
     limit = 10 # int |  (optional) (default to 10)
-    full_records = True # bool |  (optional) (default to True)
 
     try:
         # Read Game Files By Platform
-        api_response = api_instance.get_game_files_by_platform(platform_id, offset=offset, limit=limit, full_records=full_records)
+        api_response = api_instance.get_game_files_by_platform(platform_id, offset=offset, limit=limit)
         print("The response of GamefileApi->get_game_files_by_platform:\n")
         pprint(api_response)
     except Exception as e:
@@ -131,7 +128,6 @@ Name | Type | Description  | Notes
  **platform_id** | **int**|  | 
  **offset** | **int**|  | [optional] [default to 0]
  **limit** | **int**|  | [optional] [default to 10]
- **full_records** | **bool**|  | [optional] [default to True]
 
 ### Return type
 
@@ -156,7 +152,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_game_files**
-> GameFileListWithLimitOffset search_game_files(game_file_search_filter, offset=offset, limit=limit, full_records=full_records)
+> GameFileListWithLimitOffset search_game_files(game_file_search_filter, offset=offset, limit=limit)
 
 Search Game Files
 
@@ -184,11 +180,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     game_file_search_filter = openapi_client.GameFileSearchFilter() # GameFileSearchFilter | 
     offset = 0 # int |  (optional) (default to 0)
     limit = 10 # int |  (optional) (default to 10)
-    full_records = True # bool |  (optional) (default to True)
 
     try:
         # Search Game Files
-        api_response = api_instance.search_game_files(game_file_search_filter, offset=offset, limit=limit, full_records=full_records)
+        api_response = api_instance.search_game_files(game_file_search_filter, offset=offset, limit=limit)
         print("The response of GamefileApi->search_game_files:\n")
         pprint(api_response)
     except Exception as e:
@@ -205,7 +200,6 @@ Name | Type | Description  | Notes
  **game_file_search_filter** | [**GameFileSearchFilter**](GameFileSearchFilter.md)|  | 
  **offset** | **int**|  | [optional] [default to 0]
  **limit** | **int**|  | [optional] [default to 10]
- **full_records** | **bool**|  | [optional] [default to True]
 
 ### Return type
 

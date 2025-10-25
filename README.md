@@ -104,11 +104,9 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [CountResponse](docs/CountResponse.md)
- - [Files](docs/Files.md)
  - [Game](docs/Game.md)
  - [GameFile](docs/GameFile.md)
  - [GameFileListWithLimitOffset](docs/GameFileListWithLimitOffset.md)
- - [GameFileMinimal](docs/GameFileMinimal.md)
  - [GameFileSearchFilter](docs/GameFileSearchFilter.md)
  - [GameListWithLimitOffset](docs/GameListWithLimitOffset.md)
  - [HTTPValidationError](docs/HTTPValidationError.md)

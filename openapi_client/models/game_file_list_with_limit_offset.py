@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictInt
 from typing import Any, ClassVar, Dict, List
-from openapi_client.models.files import Files
+from openapi_client.models.game_file import GameFile
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -31,7 +31,7 @@ class GameFileListWithLimitOffset(BaseModel):
     offset: StrictInt
     limit: StrictInt
     total: StrictInt
-    files: Files
+    files: List[GameFile]
     __properties: ClassVar[List[str]] = ["count", "offset", "limit", "total", "files"]
 
     model_config = ConfigDict(
@@ -73,9 +73,13 @@ class GameFileListWithLimitOffset(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
-        # override the default output from pydantic by calling `to_dict()` of files
+        # override the default output from pydantic by calling `to_dict()` of each item in files (list)
+        _items = []
         if self.files:
-            _dict['files'] = self.files.to_dict()
+            for _item_files in self.files:
+                if _item_files:
+                    _items.append(_item_files.to_dict())
+            _dict['files'] = _items
         return _dict
 
     @classmethod
@@ -92,7 +96,7 @@ class GameFileListWithLimitOffset(BaseModel):
             "offset": obj.get("offset"),
             "limit": obj.get("limit"),
             "total": obj.get("total"),
-            "files": Files.from_dict(obj["files"]) if obj.get("files") is not None else None
+            "files": [GameFile.from_dict(_item) for _item in obj["files"]] if obj.get("files") is not None else None
         })
         return _obj
 

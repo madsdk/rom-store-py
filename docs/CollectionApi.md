@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_missing_game_files_by_platform**
-> GameFileListWithLimitOffset get_missing_game_files_by_platform(platform_id, offset=offset, limit=limit, full_records=full_records)
+> GameFileListWithLimitOffset get_missing_game_files_by_platform(platform_id, offset=offset, limit=limit)
 
 Missing Files By Platform
 
@@ -196,11 +196,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     platform_id = 56 # int | 
     offset = 0 # int |  (optional) (default to 0)
     limit = 10 # int |  (optional) (default to 10)
-    full_records = True # bool |  (optional) (default to True)
 
     try:
         # Missing Files By Platform
-        api_response = api_instance.get_missing_game_files_by_platform(platform_id, offset=offset, limit=limit, full_records=full_records)
+        api_response = api_instance.get_missing_game_files_by_platform(platform_id, offset=offset, limit=limit)
         print("The response of CollectionApi->get_missing_game_files_by_platform:\n")
         pprint(api_response)
     except Exception as e:
@@ -217,7 +216,6 @@ Name | Type | Description  | Notes
  **platform_id** | **int**|  | 
  **offset** | **int**|  | [optional] [default to 0]
  **limit** | **int**|  | [optional] [default to 10]
- **full_records** | **bool**|  | [optional] [default to True]
 
 ### Return type
 

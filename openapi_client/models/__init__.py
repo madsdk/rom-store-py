@@ -14,11 +14,9 @@
 
 # import models into model package
 from openapi_client.models.count_response import CountResponse
-from openapi_client.models.files import Files
 from openapi_client.models.game import Game
 from openapi_client.models.game_file import GameFile
 from openapi_client.models.game_file_list_with_limit_offset import GameFileListWithLimitOffset
-from openapi_client.models.game_file_minimal import GameFileMinimal
 from openapi_client.models.game_file_search_filter import GameFileSearchFilter
 from openapi_client.models.game_list_with_limit_offset import GameListWithLimitOffset
 from openapi_client.models.http_validation_error import HTTPValidationError

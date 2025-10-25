@@ -16,7 +16,7 @@ from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
-from pydantic import StrictBool, StrictInt
+from pydantic import StrictInt
 from typing import Optional
 from openapi_client.models.count_response import CountResponse
 from openapi_client.models.game_file_list_with_limit_offset import GameFileListWithLimitOffset
@@ -602,7 +602,6 @@ class CollectionApi:
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -625,8 +624,6 @@ class CollectionApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -653,7 +650,6 @@ class CollectionApi:
             platform_id=platform_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -681,7 +677,6 @@ class CollectionApi:
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -704,8 +699,6 @@ class CollectionApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -732,7 +725,6 @@ class CollectionApi:
             platform_id=platform_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -760,7 +752,6 @@ class CollectionApi:
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -783,8 +774,6 @@ class CollectionApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -811,7 +800,6 @@ class CollectionApi:
             platform_id=platform_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -834,7 +822,6 @@ class CollectionApi:
         platform_id,
         offset,
         limit,
-        full_records,
         _request_auth,
         _content_type,
         _headers,
@@ -866,10 +853,6 @@ class CollectionApi:
         if limit is not None:
             
             _query_params.append(('limit', limit))
-            
-        if full_records is not None:
-            
-            _query_params.append(('full_records', full_records))
             
         # process the header parameters
         # process the form parameters

@@ -16,7 +16,7 @@ from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
-from pydantic import StrictBool, StrictInt
+from pydantic import StrictInt
 from typing import Optional
 from openapi_client.models.game_file_list_with_limit_offset import GameFileListWithLimitOffset
 from openapi_client.models.game_file_search_filter import GameFileSearchFilter
@@ -45,7 +45,6 @@ class GamefileApi:
         game_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -68,8 +67,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -96,7 +93,6 @@ class GamefileApi:
             game_id=game_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -124,7 +120,6 @@ class GamefileApi:
         game_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -147,8 +142,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -175,7 +168,6 @@ class GamefileApi:
             game_id=game_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -203,7 +195,6 @@ class GamefileApi:
         game_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -226,8 +217,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -254,7 +243,6 @@ class GamefileApi:
             game_id=game_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -277,7 +265,6 @@ class GamefileApi:
         game_id,
         offset,
         limit,
-        full_records,
         _request_auth,
         _content_type,
         _headers,
@@ -309,10 +296,6 @@ class GamefileApi:
         if limit is not None:
             
             _query_params.append(('limit', limit))
-            
-        if full_records is not None:
-            
-            _query_params.append(('full_records', full_records))
             
         # process the header parameters
         # process the form parameters
@@ -356,7 +339,6 @@ class GamefileApi:
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -379,8 +361,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -407,7 +387,6 @@ class GamefileApi:
             platform_id=platform_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -435,7 +414,6 @@ class GamefileApi:
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -458,8 +436,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -486,7 +462,6 @@ class GamefileApi:
             platform_id=platform_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -514,7 +489,6 @@ class GamefileApi:
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -537,8 +511,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -565,7 +537,6 @@ class GamefileApi:
             platform_id=platform_id,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -588,7 +559,6 @@ class GamefileApi:
         platform_id,
         offset,
         limit,
-        full_records,
         _request_auth,
         _content_type,
         _headers,
@@ -620,10 +590,6 @@ class GamefileApi:
         if limit is not None:
             
             _query_params.append(('limit', limit))
-            
-        if full_records is not None:
-            
-            _query_params.append(('full_records', full_records))
             
         # process the header parameters
         # process the form parameters
@@ -667,7 +633,6 @@ class GamefileApi:
         game_file_search_filter: GameFileSearchFilter,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -690,8 +655,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -718,7 +681,6 @@ class GamefileApi:
             game_file_search_filter=game_file_search_filter,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -746,7 +708,6 @@ class GamefileApi:
         game_file_search_filter: GameFileSearchFilter,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -769,8 +730,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -797,7 +756,6 @@ class GamefileApi:
             game_file_search_filter=game_file_search_filter,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -825,7 +783,6 @@ class GamefileApi:
         game_file_search_filter: GameFileSearchFilter,
         offset: Optional[StrictInt] = None,
         limit: Optional[StrictInt] = None,
-        full_records: Optional[StrictBool] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -848,8 +805,6 @@ class GamefileApi:
         :type offset: int
         :param limit:
         :type limit: int
-        :param full_records:
-        :type full_records: bool
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -876,7 +831,6 @@ class GamefileApi:
             game_file_search_filter=game_file_search_filter,
             offset=offset,
             limit=limit,
-            full_records=full_records,
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -899,7 +853,6 @@ class GamefileApi:
         game_file_search_filter,
         offset,
         limit,
-        full_records,
         _request_auth,
         _content_type,
         _headers,
@@ -929,10 +882,6 @@ class GamefileApi:
         if limit is not None:
             
             _query_params.append(('limit', limit))
-            
-        if full_records is not None:
-            
-            _query_params.append(('full_records', full_records))
             
         # process the header parameters
         # process the form parameters

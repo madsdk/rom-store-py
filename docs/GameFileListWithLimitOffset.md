@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **offset** | **int** |  | 
 **limit** | **int** |  | 
 **total** | **int** |  | 
-**files** | [**Files**](Files.md) |  | 
+**files** | [**List[GameFile]**](GameFile.md) |  | 
 
 ## Example
 

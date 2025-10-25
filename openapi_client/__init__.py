@@ -35,11 +35,9 @@ __all__ = [
     "ApiAttributeError",
     "ApiException",
     "CountResponse",
-    "Files",
     "Game",
     "GameFile",
     "GameFileListWithLimitOffset",
-    "GameFileMinimal",
     "GameFileSearchFilter",
     "GameListWithLimitOffset",
     "HTTPValidationError",
@@ -73,11 +71,9 @@ from openapi_client.exceptions import ApiException as ApiException
 
 # import models into sdk package
 from openapi_client.models.count_response import CountResponse as CountResponse
-from openapi_client.models.files import Files as Files
 from openapi_client.models.game import Game as Game
 from openapi_client.models.game_file import GameFile as GameFile
 from openapi_client.models.game_file_list_with_limit_offset import GameFileListWithLimitOffset as GameFileListWithLimitOffset
-from openapi_client.models.game_file_minimal import GameFileMinimal as GameFileMinimal
 from openapi_client.models.game_file_search_filter import GameFileSearchFilter as GameFileSearchFilter
 from openapi_client.models.game_list_with_limit_offset import GameListWithLimitOffset as GameListWithLimitOffset
 from openapi_client.models.http_validation_error import HTTPValidationError as HTTPValidationError
