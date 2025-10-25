@@ -87,18 +87,18 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AuthApi* | [**login_for_access_token_auth_token_post**](docs/AuthApi.md#login_for_access_token_auth_token_post) | **POST** /auth/token | Login For Access Token
 *AuthApi* | [**register_user_auth_register_post**](docs/AuthApi.md#register_user_auth_register_post) | **POST** /auth/register | Register User
-*CollectionApi* | [**games_by_platform_collection_by_platform_platform_id_get**](docs/CollectionApi.md#games_by_platform_collection_by_platform_platform_id_get) | **GET** /collection/by-platform/{platform_id} | Games By Platform
-*CollectionApi* | [**missing_files_by_platform_collection_missing_by_platform_platform_id_get**](docs/CollectionApi.md#missing_files_by_platform_collection_missing_by_platform_platform_id_get) | **GET** /collection/missing-by-platform/{platform_id} | Missing Files By Platform
-*CollectionApi* | [**missing_files_by_platform_count_collection_missing_by_platform_count_platform_id_get**](docs/CollectionApi.md#missing_files_by_platform_count_collection_missing_by_platform_count_platform_id_get) | **GET** /collection/missing-by-platform-count/{platform_id} | Missing Files By Platform Count
-*DatfileApi* | [**upload_datfile_datfile_upload_post**](docs/DatfileApi.md#upload_datfile_datfile_upload_post) | **POST** /datfile/upload/ | Upload Datfile
+*CollectionApi* | [**get_collection_games_by_platform**](docs/CollectionApi.md#get_collection_games_by_platform) | **GET** /collection/by-platform/{platform_id} | Games By Platform
+*CollectionApi* | [**get_missing_game_file_count_by_platform**](docs/CollectionApi.md#get_missing_game_file_count_by_platform) | **GET** /collection/missing-by-platform-count/{platform_id} | Missing Files By Platform Count
+*CollectionApi* | [**get_missing_game_files_by_platform**](docs/CollectionApi.md#get_missing_game_files_by_platform) | **GET** /collection/missing-by-platform/{platform_id} | Missing Files By Platform
+*DatfileApi* | [**upload_datfile**](docs/DatfileApi.md#upload_datfile) | **POST** /datfile/upload/ | Upload Datfile
 *GameApi* | [**get_games_by_platform**](docs/GameApi.md#get_games_by_platform) | **GET** /game/by-platform/{platform_id} | Read Games By Platform
 *GameApi* | [**search_games**](docs/GameApi.md#search_games) | **GET** /game/search | Search Games
-*GamefileApi* | [**read_game_files_by_game_gamefile_by_game_game_id_get**](docs/GamefileApi.md#read_game_files_by_game_gamefile_by_game_game_id_get) | **GET** /gamefile/by-game/{game_id} | Read Game Files By Game
-*GamefileApi* | [**read_game_files_by_platform_gamefile_by_platform_platform_id_get**](docs/GamefileApi.md#read_game_files_by_platform_gamefile_by_platform_platform_id_get) | **GET** /gamefile/by-platform/{platform_id} | Read Game Files By Platform
-*GamefileApi* | [**search_game_files_gamefile_search_post**](docs/GamefileApi.md#search_game_files_gamefile_search_post) | **POST** /gamefile/search | Search Game Files
+*GamefileApi* | [**get_game_files_by_game**](docs/GamefileApi.md#get_game_files_by_game) | **GET** /gamefile/by-game/{game_id} | Read Game Files By Game
+*GamefileApi* | [**get_game_files_by_platform**](docs/GamefileApi.md#get_game_files_by_platform) | **GET** /gamefile/by-platform/{platform_id} | Read Game Files By Platform
+*GamefileApi* | [**search_game_files**](docs/GamefileApi.md#search_game_files) | **POST** /gamefile/search | Search Game Files
 *PingApi* | [**root_get**](docs/PingApi.md#root_get) | **GET** / | Root
-*PlatformApi* | [**read_platforms_platform_get**](docs/PlatformApi.md#read_platforms_platform_get) | **GET** /platform/ | Read Platforms
-*PlatformApi* | [**search_platforms_platform_search_get**](docs/PlatformApi.md#search_platforms_platform_search_get) | **GET** /platform/search | Search Platforms
+*PlatformApi* | [**list_platforms**](docs/PlatformApi.md#list_platforms) | **GET** /platform/ | Read Platforms
+*PlatformApi* | [**search_platforms**](docs/PlatformApi.md#search_platforms) | **GET** /platform/search | Search Platforms
 
 
 ## Documentation For Models

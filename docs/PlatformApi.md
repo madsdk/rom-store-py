@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**read_platforms_platform_get**](PlatformApi.md#read_platforms_platform_get) | **GET** /platform/ | Read Platforms
-[**search_platforms_platform_search_get**](PlatformApi.md#search_platforms_platform_search_get) | **GET** /platform/search | Search Platforms
+[**list_platforms**](PlatformApi.md#list_platforms) | **GET** /platform/ | Read Platforms
+[**search_platforms**](PlatformApi.md#search_platforms) | **GET** /platform/search | Search Platforms
 
 
-# **read_platforms_platform_get**
-> PlatformList read_platforms_platform_get()
+# **list_platforms**
+> PlatformList list_platforms()
 
 Read Platforms
 
@@ -36,11 +36,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Read Platforms
-        api_response = api_instance.read_platforms_platform_get()
-        print("The response of PlatformApi->read_platforms_platform_get:\n")
+        api_response = api_instance.list_platforms()
+        print("The response of PlatformApi->list_platforms:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling PlatformApi->read_platforms_platform_get: %s\n" % e)
+        print("Exception when calling PlatformApi->list_platforms: %s\n" % e)
 ```
 
 
@@ -70,8 +70,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **search_platforms_platform_search_get**
-> PlatformList search_platforms_platform_search_get(query)
+# **search_platforms**
+> PlatformList search_platforms(query)
 
 Search Platforms
 
@@ -99,11 +99,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Search Platforms
-        api_response = api_instance.search_platforms_platform_search_get(query)
-        print("The response of PlatformApi->search_platforms_platform_search_get:\n")
+        api_response = api_instance.search_platforms(query)
+        print("The response of PlatformApi->search_platforms:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling PlatformApi->search_platforms_platform_search_get: %s\n" % e)
+        print("Exception when calling PlatformApi->search_platforms: %s\n" % e)
 ```
 
 

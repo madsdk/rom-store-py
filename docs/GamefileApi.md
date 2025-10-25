@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**read_game_files_by_game_gamefile_by_game_game_id_get**](GamefileApi.md#read_game_files_by_game_gamefile_by_game_game_id_get) | **GET** /gamefile/by-game/{game_id} | Read Game Files By Game
-[**read_game_files_by_platform_gamefile_by_platform_platform_id_get**](GamefileApi.md#read_game_files_by_platform_gamefile_by_platform_platform_id_get) | **GET** /gamefile/by-platform/{platform_id} | Read Game Files By Platform
-[**search_game_files_gamefile_search_post**](GamefileApi.md#search_game_files_gamefile_search_post) | **POST** /gamefile/search | Search Game Files
+[**get_game_files_by_game**](GamefileApi.md#get_game_files_by_game) | **GET** /gamefile/by-game/{game_id} | Read Game Files By Game
+[**get_game_files_by_platform**](GamefileApi.md#get_game_files_by_platform) | **GET** /gamefile/by-platform/{platform_id} | Read Game Files By Platform
+[**search_game_files**](GamefileApi.md#search_game_files) | **POST** /gamefile/search | Search Game Files
 
 
-# **read_game_files_by_game_gamefile_by_game_game_id_get**
-> GameFileListWithLimitOffset read_game_files_by_game_gamefile_by_game_game_id_get(game_id, offset=offset, limit=limit, full_records=full_records)
+# **get_game_files_by_game**
+> GameFileListWithLimitOffset get_game_files_by_game(game_id, offset=offset, limit=limit, full_records=full_records)
 
 Read Game Files By Game
 
@@ -41,11 +41,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Read Game Files By Game
-        api_response = api_instance.read_game_files_by_game_gamefile_by_game_game_id_get(game_id, offset=offset, limit=limit, full_records=full_records)
-        print("The response of GamefileApi->read_game_files_by_game_gamefile_by_game_game_id_get:\n")
+        api_response = api_instance.get_game_files_by_game(game_id, offset=offset, limit=limit, full_records=full_records)
+        print("The response of GamefileApi->get_game_files_by_game:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GamefileApi->read_game_files_by_game_gamefile_by_game_game_id_get: %s\n" % e)
+        print("Exception when calling GamefileApi->get_game_files_by_game: %s\n" % e)
 ```
 
 
@@ -82,8 +82,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **read_game_files_by_platform_gamefile_by_platform_platform_id_get**
-> GameFileListWithLimitOffset read_game_files_by_platform_gamefile_by_platform_platform_id_get(platform_id, offset=offset, limit=limit, full_records=full_records)
+# **get_game_files_by_platform**
+> GameFileListWithLimitOffset get_game_files_by_platform(platform_id, offset=offset, limit=limit, full_records=full_records)
 
 Read Game Files By Platform
 
@@ -114,11 +114,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Read Game Files By Platform
-        api_response = api_instance.read_game_files_by_platform_gamefile_by_platform_platform_id_get(platform_id, offset=offset, limit=limit, full_records=full_records)
-        print("The response of GamefileApi->read_game_files_by_platform_gamefile_by_platform_platform_id_get:\n")
+        api_response = api_instance.get_game_files_by_platform(platform_id, offset=offset, limit=limit, full_records=full_records)
+        print("The response of GamefileApi->get_game_files_by_platform:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GamefileApi->read_game_files_by_platform_gamefile_by_platform_platform_id_get: %s\n" % e)
+        print("Exception when calling GamefileApi->get_game_files_by_platform: %s\n" % e)
 ```
 
 
@@ -155,8 +155,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **search_game_files_gamefile_search_post**
-> GameFileListWithLimitOffset search_game_files_gamefile_search_post(game_file_search_filter, offset=offset, limit=limit, full_records=full_records)
+# **search_game_files**
+> GameFileListWithLimitOffset search_game_files(game_file_search_filter, offset=offset, limit=limit, full_records=full_records)
 
 Search Game Files
 
@@ -188,11 +188,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Search Game Files
-        api_response = api_instance.search_game_files_gamefile_search_post(game_file_search_filter, offset=offset, limit=limit, full_records=full_records)
-        print("The response of GamefileApi->search_game_files_gamefile_search_post:\n")
+        api_response = api_instance.search_game_files(game_file_search_filter, offset=offset, limit=limit, full_records=full_records)
+        print("The response of GamefileApi->search_game_files:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GamefileApi->search_game_files_gamefile_search_post: %s\n" % e)
+        print("Exception when calling GamefileApi->search_game_files: %s\n" % e)
 ```
 
 

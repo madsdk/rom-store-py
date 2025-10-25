@@ -38,7 +38,7 @@ class DatfileApi:
 
 
     @validate_call
-    def upload_datfile_datfile_upload_post(
+    def upload_datfile(
         self,
         file: Union[StrictBytes, StrictStr, Tuple[StrictStr, StrictBytes]],
         _request_timeout: Union[
@@ -81,7 +81,7 @@ class DatfileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._upload_datfile_datfile_upload_post_serialize(
+        _param = self._upload_datfile_serialize(
             file=file,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -105,7 +105,7 @@ class DatfileApi:
 
 
     @validate_call
-    def upload_datfile_datfile_upload_post_with_http_info(
+    def upload_datfile_with_http_info(
         self,
         file: Union[StrictBytes, StrictStr, Tuple[StrictStr, StrictBytes]],
         _request_timeout: Union[
@@ -148,7 +148,7 @@ class DatfileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._upload_datfile_datfile_upload_post_serialize(
+        _param = self._upload_datfile_serialize(
             file=file,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -172,7 +172,7 @@ class DatfileApi:
 
 
     @validate_call
-    def upload_datfile_datfile_upload_post_without_preload_content(
+    def upload_datfile_without_preload_content(
         self,
         file: Union[StrictBytes, StrictStr, Tuple[StrictStr, StrictBytes]],
         _request_timeout: Union[
@@ -215,7 +215,7 @@ class DatfileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._upload_datfile_datfile_upload_post_serialize(
+        _param = self._upload_datfile_serialize(
             file=file,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -234,7 +234,7 @@ class DatfileApi:
         return response_data.response
 
 
-    def _upload_datfile_datfile_upload_post_serialize(
+    def _upload_datfile_serialize(
         self,
         file,
         _request_auth,

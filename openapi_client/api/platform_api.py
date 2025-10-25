@@ -38,7 +38,7 @@ class PlatformApi:
 
 
     @validate_call
-    def read_platforms_platform_get(
+    def list_platforms(
         self,
         _request_timeout: Union[
             None,
@@ -78,7 +78,7 @@ class PlatformApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_platforms_platform_get_serialize(
+        _param = self._list_platforms_serialize(
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -100,7 +100,7 @@ class PlatformApi:
 
 
     @validate_call
-    def read_platforms_platform_get_with_http_info(
+    def list_platforms_with_http_info(
         self,
         _request_timeout: Union[
             None,
@@ -140,7 +140,7 @@ class PlatformApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_platforms_platform_get_serialize(
+        _param = self._list_platforms_serialize(
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -162,7 +162,7 @@ class PlatformApi:
 
 
     @validate_call
-    def read_platforms_platform_get_without_preload_content(
+    def list_platforms_without_preload_content(
         self,
         _request_timeout: Union[
             None,
@@ -202,7 +202,7 @@ class PlatformApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_platforms_platform_get_serialize(
+        _param = self._list_platforms_serialize(
             _request_auth=_request_auth,
             _content_type=_content_type,
             _headers=_headers,
@@ -219,7 +219,7 @@ class PlatformApi:
         return response_data.response
 
 
-    def _read_platforms_platform_get_serialize(
+    def _list_platforms_serialize(
         self,
         _request_auth,
         _content_type,
@@ -280,7 +280,7 @@ class PlatformApi:
 
 
     @validate_call
-    def search_platforms_platform_search_get(
+    def search_platforms(
         self,
         query: StrictStr,
         _request_timeout: Union[
@@ -323,7 +323,7 @@ class PlatformApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_platforms_platform_search_get_serialize(
+        _param = self._search_platforms_serialize(
             query=query,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -347,7 +347,7 @@ class PlatformApi:
 
 
     @validate_call
-    def search_platforms_platform_search_get_with_http_info(
+    def search_platforms_with_http_info(
         self,
         query: StrictStr,
         _request_timeout: Union[
@@ -390,7 +390,7 @@ class PlatformApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_platforms_platform_search_get_serialize(
+        _param = self._search_platforms_serialize(
             query=query,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -414,7 +414,7 @@ class PlatformApi:
 
 
     @validate_call
-    def search_platforms_platform_search_get_without_preload_content(
+    def search_platforms_without_preload_content(
         self,
         query: StrictStr,
         _request_timeout: Union[
@@ -457,7 +457,7 @@ class PlatformApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_platforms_platform_search_get_serialize(
+        _param = self._search_platforms_serialize(
             query=query,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -476,7 +476,7 @@ class PlatformApi:
         return response_data.response
 
 
-    def _search_platforms_platform_search_get_serialize(
+    def _search_platforms_serialize(
         self,
         query,
         _request_auth,

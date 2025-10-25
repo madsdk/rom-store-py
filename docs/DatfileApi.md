@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**upload_datfile_datfile_upload_post**](DatfileApi.md#upload_datfile_datfile_upload_post) | **POST** /datfile/upload/ | Upload Datfile
+[**upload_datfile**](DatfileApi.md#upload_datfile) | **POST** /datfile/upload/ | Upload Datfile
 
 
-# **upload_datfile_datfile_upload_post**
-> object upload_datfile_datfile_upload_post(file)
+# **upload_datfile**
+> object upload_datfile(file)
 
 Upload Datfile
 
@@ -42,11 +42,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Upload Datfile
-        api_response = api_instance.upload_datfile_datfile_upload_post(file)
-        print("The response of DatfileApi->upload_datfile_datfile_upload_post:\n")
+        api_response = api_instance.upload_datfile(file)
+        print("The response of DatfileApi->upload_datfile:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling DatfileApi->upload_datfile_datfile_upload_post: %s\n" % e)
+        print("Exception when calling DatfileApi->upload_datfile: %s\n" % e)
 ```
 
 

@@ -40,7 +40,7 @@ class GamefileApi:
 
 
     @validate_call
-    def read_game_files_by_game_gamefile_by_game_game_id_get(
+    def get_game_files_by_game(
         self,
         game_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -92,7 +92,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_game_files_by_game_gamefile_by_game_game_id_get_serialize(
+        _param = self._get_game_files_by_game_serialize(
             game_id=game_id,
             offset=offset,
             limit=limit,
@@ -119,7 +119,7 @@ class GamefileApi:
 
 
     @validate_call
-    def read_game_files_by_game_gamefile_by_game_game_id_get_with_http_info(
+    def get_game_files_by_game_with_http_info(
         self,
         game_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -171,7 +171,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_game_files_by_game_gamefile_by_game_game_id_get_serialize(
+        _param = self._get_game_files_by_game_serialize(
             game_id=game_id,
             offset=offset,
             limit=limit,
@@ -198,7 +198,7 @@ class GamefileApi:
 
 
     @validate_call
-    def read_game_files_by_game_gamefile_by_game_game_id_get_without_preload_content(
+    def get_game_files_by_game_without_preload_content(
         self,
         game_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -250,7 +250,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_game_files_by_game_gamefile_by_game_game_id_get_serialize(
+        _param = self._get_game_files_by_game_serialize(
             game_id=game_id,
             offset=offset,
             limit=limit,
@@ -272,7 +272,7 @@ class GamefileApi:
         return response_data.response
 
 
-    def _read_game_files_by_game_gamefile_by_game_game_id_get_serialize(
+    def _get_game_files_by_game_serialize(
         self,
         game_id,
         offset,
@@ -351,7 +351,7 @@ class GamefileApi:
 
 
     @validate_call
-    def read_game_files_by_platform_gamefile_by_platform_platform_id_get(
+    def get_game_files_by_platform(
         self,
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -403,7 +403,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_game_files_by_platform_gamefile_by_platform_platform_id_get_serialize(
+        _param = self._get_game_files_by_platform_serialize(
             platform_id=platform_id,
             offset=offset,
             limit=limit,
@@ -430,7 +430,7 @@ class GamefileApi:
 
 
     @validate_call
-    def read_game_files_by_platform_gamefile_by_platform_platform_id_get_with_http_info(
+    def get_game_files_by_platform_with_http_info(
         self,
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -482,7 +482,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_game_files_by_platform_gamefile_by_platform_platform_id_get_serialize(
+        _param = self._get_game_files_by_platform_serialize(
             platform_id=platform_id,
             offset=offset,
             limit=limit,
@@ -509,7 +509,7 @@ class GamefileApi:
 
 
     @validate_call
-    def read_game_files_by_platform_gamefile_by_platform_platform_id_get_without_preload_content(
+    def get_game_files_by_platform_without_preload_content(
         self,
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -561,7 +561,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_game_files_by_platform_gamefile_by_platform_platform_id_get_serialize(
+        _param = self._get_game_files_by_platform_serialize(
             platform_id=platform_id,
             offset=offset,
             limit=limit,
@@ -583,7 +583,7 @@ class GamefileApi:
         return response_data.response
 
 
-    def _read_game_files_by_platform_gamefile_by_platform_platform_id_get_serialize(
+    def _get_game_files_by_platform_serialize(
         self,
         platform_id,
         offset,
@@ -662,7 +662,7 @@ class GamefileApi:
 
 
     @validate_call
-    def search_game_files_gamefile_search_post(
+    def search_game_files(
         self,
         game_file_search_filter: GameFileSearchFilter,
         offset: Optional[StrictInt] = None,
@@ -714,7 +714,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_game_files_gamefile_search_post_serialize(
+        _param = self._search_game_files_serialize(
             game_file_search_filter=game_file_search_filter,
             offset=offset,
             limit=limit,
@@ -741,7 +741,7 @@ class GamefileApi:
 
 
     @validate_call
-    def search_game_files_gamefile_search_post_with_http_info(
+    def search_game_files_with_http_info(
         self,
         game_file_search_filter: GameFileSearchFilter,
         offset: Optional[StrictInt] = None,
@@ -793,7 +793,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_game_files_gamefile_search_post_serialize(
+        _param = self._search_game_files_serialize(
             game_file_search_filter=game_file_search_filter,
             offset=offset,
             limit=limit,
@@ -820,7 +820,7 @@ class GamefileApi:
 
 
     @validate_call
-    def search_game_files_gamefile_search_post_without_preload_content(
+    def search_game_files_without_preload_content(
         self,
         game_file_search_filter: GameFileSearchFilter,
         offset: Optional[StrictInt] = None,
@@ -872,7 +872,7 @@ class GamefileApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_game_files_gamefile_search_post_serialize(
+        _param = self._search_game_files_serialize(
             game_file_search_filter=game_file_search_filter,
             offset=offset,
             limit=limit,
@@ -894,7 +894,7 @@ class GamefileApi:
         return response_data.response
 
 
-    def _search_game_files_gamefile_search_post_serialize(
+    def _search_game_files_serialize(
         self,
         game_file_search_filter,
         offset,
