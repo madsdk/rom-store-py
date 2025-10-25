@@ -91,8 +91,8 @@ Class | Method | HTTP request | Description
 *CollectionApi* | [**missing_files_by_platform_collection_missing_by_platform_platform_id_get**](docs/CollectionApi.md#missing_files_by_platform_collection_missing_by_platform_platform_id_get) | **GET** /collection/missing-by-platform/{platform_id} | Missing Files By Platform
 *CollectionApi* | [**missing_files_by_platform_count_collection_missing_by_platform_count_platform_id_get**](docs/CollectionApi.md#missing_files_by_platform_count_collection_missing_by_platform_count_platform_id_get) | **GET** /collection/missing-by-platform-count/{platform_id} | Missing Files By Platform Count
 *DatfileApi* | [**upload_datfile_datfile_upload_post**](docs/DatfileApi.md#upload_datfile_datfile_upload_post) | **POST** /datfile/upload/ | Upload Datfile
-*GameApi* | [**read_games_by_platform_game_by_platform_platform_id_get**](docs/GameApi.md#read_games_by_platform_game_by_platform_platform_id_get) | **GET** /game/by-platform/{platform_id} | Read Games By Platform
-*GameApi* | [**search_games_game_search_get**](docs/GameApi.md#search_games_game_search_get) | **GET** /game/search | Search Games
+*GameApi* | [**get_games_by_platform**](docs/GameApi.md#get_games_by_platform) | **GET** /game/by-platform/{platform_id} | Read Games By Platform
+*GameApi* | [**search_games**](docs/GameApi.md#search_games) | **GET** /game/search | Search Games
 *GamefileApi* | [**read_game_files_by_game_gamefile_by_game_game_id_get**](docs/GamefileApi.md#read_game_files_by_game_gamefile_by_game_game_id_get) | **GET** /gamefile/by-game/{game_id} | Read Game Files By Game
 *GamefileApi* | [**read_game_files_by_platform_gamefile_by_platform_platform_id_get**](docs/GamefileApi.md#read_game_files_by_platform_gamefile_by_platform_platform_id_get) | **GET** /gamefile/by-platform/{platform_id} | Read Game Files By Platform
 *GamefileApi* | [**search_game_files_gamefile_search_post**](docs/GamefileApi.md#search_game_files_gamefile_search_post) | **POST** /gamefile/search | Search Game Files

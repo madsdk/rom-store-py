@@ -39,7 +39,7 @@ class GameApi:
 
 
     @validate_call
-    def read_games_by_platform_game_by_platform_platform_id_get(
+    def get_games_by_platform(
         self,
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -88,7 +88,7 @@ class GameApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_games_by_platform_game_by_platform_platform_id_get_serialize(
+        _param = self._get_games_by_platform_serialize(
             platform_id=platform_id,
             offset=offset,
             limit=limit,
@@ -114,7 +114,7 @@ class GameApi:
 
 
     @validate_call
-    def read_games_by_platform_game_by_platform_platform_id_get_with_http_info(
+    def get_games_by_platform_with_http_info(
         self,
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -163,7 +163,7 @@ class GameApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_games_by_platform_game_by_platform_platform_id_get_serialize(
+        _param = self._get_games_by_platform_serialize(
             platform_id=platform_id,
             offset=offset,
             limit=limit,
@@ -189,7 +189,7 @@ class GameApi:
 
 
     @validate_call
-    def read_games_by_platform_game_by_platform_platform_id_get_without_preload_content(
+    def get_games_by_platform_without_preload_content(
         self,
         platform_id: StrictInt,
         offset: Optional[StrictInt] = None,
@@ -238,7 +238,7 @@ class GameApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._read_games_by_platform_game_by_platform_platform_id_get_serialize(
+        _param = self._get_games_by_platform_serialize(
             platform_id=platform_id,
             offset=offset,
             limit=limit,
@@ -259,7 +259,7 @@ class GameApi:
         return response_data.response
 
 
-    def _read_games_by_platform_game_by_platform_platform_id_get_serialize(
+    def _get_games_by_platform_serialize(
         self,
         platform_id,
         offset,
@@ -333,7 +333,7 @@ class GameApi:
 
 
     @validate_call
-    def search_games_game_search_get(
+    def search_games(
         self,
         query_name: Optional[StrictStr] = None,
         query_publisher: Optional[StrictStr] = None,
@@ -385,7 +385,7 @@ class GameApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_games_game_search_get_serialize(
+        _param = self._search_games_serialize(
             query_name=query_name,
             query_publisher=query_publisher,
             offset=offset,
@@ -412,7 +412,7 @@ class GameApi:
 
 
     @validate_call
-    def search_games_game_search_get_with_http_info(
+    def search_games_with_http_info(
         self,
         query_name: Optional[StrictStr] = None,
         query_publisher: Optional[StrictStr] = None,
@@ -464,7 +464,7 @@ class GameApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_games_game_search_get_serialize(
+        _param = self._search_games_serialize(
             query_name=query_name,
             query_publisher=query_publisher,
             offset=offset,
@@ -491,7 +491,7 @@ class GameApi:
 
 
     @validate_call
-    def search_games_game_search_get_without_preload_content(
+    def search_games_without_preload_content(
         self,
         query_name: Optional[StrictStr] = None,
         query_publisher: Optional[StrictStr] = None,
@@ -543,7 +543,7 @@ class GameApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._search_games_game_search_get_serialize(
+        _param = self._search_games_serialize(
             query_name=query_name,
             query_publisher=query_publisher,
             offset=offset,
@@ -565,7 +565,7 @@ class GameApi:
         return response_data.response
 
 
-    def _search_games_game_search_get_serialize(
+    def _search_games_serialize(
         self,
         query_name,
         query_publisher,

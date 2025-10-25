@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**read_games_by_platform_game_by_platform_platform_id_get**](GameApi.md#read_games_by_platform_game_by_platform_platform_id_get) | **GET** /game/by-platform/{platform_id} | Read Games By Platform
-[**search_games_game_search_get**](GameApi.md#search_games_game_search_get) | **GET** /game/search | Search Games
+[**get_games_by_platform**](GameApi.md#get_games_by_platform) | **GET** /game/by-platform/{platform_id} | Read Games By Platform
+[**search_games**](GameApi.md#search_games) | **GET** /game/search | Search Games
 
 
-# **read_games_by_platform_game_by_platform_platform_id_get**
-> GameListWithLimitOffset read_games_by_platform_game_by_platform_platform_id_get(platform_id, offset=offset, limit=limit)
+# **get_games_by_platform**
+> GameListWithLimitOffset get_games_by_platform(platform_id, offset=offset, limit=limit)
 
 Read Games By Platform
 
@@ -39,11 +39,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Read Games By Platform
-        api_response = api_instance.read_games_by_platform_game_by_platform_platform_id_get(platform_id, offset=offset, limit=limit)
-        print("The response of GameApi->read_games_by_platform_game_by_platform_platform_id_get:\n")
+        api_response = api_instance.get_games_by_platform(platform_id, offset=offset, limit=limit)
+        print("The response of GameApi->get_games_by_platform:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GameApi->read_games_by_platform_game_by_platform_platform_id_get: %s\n" % e)
+        print("Exception when calling GameApi->get_games_by_platform: %s\n" % e)
 ```
 
 
@@ -79,8 +79,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **search_games_game_search_get**
-> GameListWithLimitOffset search_games_game_search_get(query_name=query_name, query_publisher=query_publisher, offset=offset, limit=limit)
+# **search_games**
+> GameListWithLimitOffset search_games(query_name=query_name, query_publisher=query_publisher, offset=offset, limit=limit)
 
 Search Games
 
@@ -111,11 +111,11 @@ with openapi_client.ApiClient(configuration) as api_client:
 
     try:
         # Search Games
-        api_response = api_instance.search_games_game_search_get(query_name=query_name, query_publisher=query_publisher, offset=offset, limit=limit)
-        print("The response of GameApi->search_games_game_search_get:\n")
+        api_response = api_instance.search_games(query_name=query_name, query_publisher=query_publisher, offset=offset, limit=limit)
+        print("The response of GameApi->search_games:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GameApi->search_games_game_search_get: %s\n" % e)
+        print("Exception when calling GameApi->search_games: %s\n" % e)
 ```
 
 
