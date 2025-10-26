@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | 
 **name** | **str** |  | 
+**short_name** | **str** |  | [optional] 
+**format** | **str** |  | [optional] 
 
 ## Example
 

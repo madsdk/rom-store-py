@@ -18,7 +18,7 @@ import re  # noqa: F401
 import json
 
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
-from typing import Any, ClassVar, Dict, List
+from typing import Any, ClassVar, Dict, List, Optional
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -28,7 +28,9 @@ class Platform(BaseModel):
     """ # noqa: E501
     id: StrictInt
     name: StrictStr
-    __properties: ClassVar[List[str]] = ["id", "name"]
+    short_name: Optional[StrictStr] = None
+    format: Optional[StrictStr] = None
+    __properties: ClassVar[List[str]] = ["id", "name", "short_name", "format"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -69,6 +71,16 @@ class Platform(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
+        # set to None if short_name (nullable) is None
+        # and model_fields_set contains the field
+        if self.short_name is None and "short_name" in self.model_fields_set:
+            _dict['short_name'] = None
+
+        # set to None if format (nullable) is None
+        # and model_fields_set contains the field
+        if self.format is None and "format" in self.model_fields_set:
+            _dict['format'] = None
+
         return _dict
 
     @classmethod
@@ -82,7 +94,9 @@ class Platform(BaseModel):
 
         _obj = cls.model_validate({
             "id": obj.get("id"),
-            "name": obj.get("name")
+            "name": obj.get("name"),
+            "short_name": obj.get("short_name"),
+            "format": obj.get("format")
         })
         return _obj
 
