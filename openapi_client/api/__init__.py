@@ -8,4 +8,5 @@ from openapi_client.api.game_api import GameApi
 from openapi_client.api.gamefile_api import GamefileApi
 from openapi_client.api.ping_api import PingApi
 from openapi_client.api.platform_api import PlatformApi
+from openapi_client.api.search_api import SearchApi
 

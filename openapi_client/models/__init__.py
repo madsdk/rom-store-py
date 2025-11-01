@@ -19,10 +19,15 @@ from openapi_client.models.game_file import GameFile
 from openapi_client.models.game_file_list_with_limit_offset import GameFileListWithLimitOffset
 from openapi_client.models.game_file_search_filter import GameFileSearchFilter
 from openapi_client.models.game_list_with_limit_offset import GameListWithLimitOffset
+from openapi_client.models.game_search_filter import GameSearchFilter
 from openapi_client.models.http_validation_error import HTTPValidationError
 from openapi_client.models.login_data import LoginData
 from openapi_client.models.platform import Platform
 from openapi_client.models.platform_list import PlatformList
+from openapi_client.models.platform_search_filter import PlatformSearchFilter
+from openapi_client.models.search_filter import SearchFilter
+from openapi_client.models.search_result import SearchResult
+from openapi_client.models.search_result_with_limit_offset import SearchResultWithLimitOffset
 from openapi_client.models.token import Token
 from openapi_client.models.validation_error import ValidationError
 from openapi_client.models.validation_error_loc_inner import ValidationErrorLocInner

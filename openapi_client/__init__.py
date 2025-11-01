@@ -25,6 +25,7 @@ __all__ = [
     "GamefileApi",
     "PingApi",
     "PlatformApi",
+    "SearchApi",
     "ApiResponse",
     "ApiClient",
     "Configuration",
@@ -40,10 +41,15 @@ __all__ = [
     "GameFileListWithLimitOffset",
     "GameFileSearchFilter",
     "GameListWithLimitOffset",
+    "GameSearchFilter",
     "HTTPValidationError",
     "LoginData",
     "Platform",
     "PlatformList",
+    "PlatformSearchFilter",
+    "SearchFilter",
+    "SearchResult",
+    "SearchResultWithLimitOffset",
     "Token",
     "ValidationError",
     "ValidationErrorLocInner",
@@ -57,6 +63,7 @@ from openapi_client.api.game_api import GameApi as GameApi
 from openapi_client.api.gamefile_api import GamefileApi as GamefileApi
 from openapi_client.api.ping_api import PingApi as PingApi
 from openapi_client.api.platform_api import PlatformApi as PlatformApi
+from openapi_client.api.search_api import SearchApi as SearchApi
 
 # import ApiClient
 from openapi_client.api_response import ApiResponse as ApiResponse
@@ -76,10 +83,15 @@ from openapi_client.models.game_file import GameFile as GameFile
 from openapi_client.models.game_file_list_with_limit_offset import GameFileListWithLimitOffset as GameFileListWithLimitOffset
 from openapi_client.models.game_file_search_filter import GameFileSearchFilter as GameFileSearchFilter
 from openapi_client.models.game_list_with_limit_offset import GameListWithLimitOffset as GameListWithLimitOffset
+from openapi_client.models.game_search_filter import GameSearchFilter as GameSearchFilter
 from openapi_client.models.http_validation_error import HTTPValidationError as HTTPValidationError
 from openapi_client.models.login_data import LoginData as LoginData
 from openapi_client.models.platform import Platform as Platform
 from openapi_client.models.platform_list import PlatformList as PlatformList
+from openapi_client.models.platform_search_filter import PlatformSearchFilter as PlatformSearchFilter
+from openapi_client.models.search_filter import SearchFilter as SearchFilter
+from openapi_client.models.search_result import SearchResult as SearchResult
+from openapi_client.models.search_result_with_limit_offset import SearchResultWithLimitOffset as SearchResultWithLimitOffset
 from openapi_client.models.token import Token as Token
 from openapi_client.models.validation_error import ValidationError as ValidationError
 from openapi_client.models.validation_error_loc_inner import ValidationErrorLocInner as ValidationErrorLocInner

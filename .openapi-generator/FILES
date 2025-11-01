@@ -13,6 +13,7 @@ docs/GameFile.md
 docs/GameFileListWithLimitOffset.md
 docs/GameFileSearchFilter.md
 docs/GameListWithLimitOffset.md
+docs/GameSearchFilter.md
 docs/GamefileApi.md
 docs/HTTPValidationError.md
 docs/LoginData.md
@@ -20,6 +21,11 @@ docs/PingApi.md
 docs/Platform.md
 docs/PlatformApi.md
 docs/PlatformList.md
+docs/PlatformSearchFilter.md
+docs/SearchApi.md
+docs/SearchFilter.md
+docs/SearchResult.md
+docs/SearchResultWithLimitOffset.md
 docs/Token.md
 docs/ValidationError.md
 docs/ValidationErrorLocInner.md
@@ -33,6 +39,7 @@ openapi_client/api/game_api.py
 openapi_client/api/gamefile_api.py
 openapi_client/api/ping_api.py
 openapi_client/api/platform_api.py
+openapi_client/api/search_api.py
 openapi_client/api_client.py
 openapi_client/api_response.py
 openapi_client/configuration.py
@@ -44,10 +51,15 @@ openapi_client/models/game_file.py
 openapi_client/models/game_file_list_with_limit_offset.py
 openapi_client/models/game_file_search_filter.py
 openapi_client/models/game_list_with_limit_offset.py
+openapi_client/models/game_search_filter.py
 openapi_client/models/http_validation_error.py
 openapi_client/models/login_data.py
 openapi_client/models/platform.py
 openapi_client/models/platform_list.py
+openapi_client/models/platform_search_filter.py
+openapi_client/models/search_filter.py
+openapi_client/models/search_result.py
+openapi_client/models/search_result_with_limit_offset.py
 openapi_client/models/token.py
 openapi_client/models/validation_error.py
 openapi_client/models/validation_error_loc_inner.py
@@ -59,4 +71,10 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_game_search_filter.py
+test/test_platform_search_filter.py
+test/test_search_api.py
+test/test_search_filter.py
+test/test_search_result.py
+test/test_search_result_with_limit_offset.py
 tox.ini
